@@ -4,9 +4,9 @@ python modules with go
 Based on https://blog.filippo.io/building-python-modules-with-go-1-5/#thecompletedemosource
 
 
-Building:
+## Building:
 ```
-go build -buildmode=c-shared -o foo.so
+$ go build -buildmode=c-shared -o foo.so
 # _/home/sander/golang/mijn-module/example-final
 ./foo.c:20:5: warning: initialization from incompatible pointer type [enabled by default]
      {"sumof3", sumof3, METH_VARARGS, "Add three numbers."},
@@ -15,7 +15,7 @@ go build -buildmode=c-shared -o foo.so
 ```
 To do: get rid of that warning ...
 
-Result should be:
+## Resulting files:
 ```
 -rw-rw-r-- 1 sander sander     966 nov 26 08:00 foo.c
 -rw-r--r-- 1 sander sander    1679 nov 26 08:06 foo.h
@@ -24,7 +24,7 @@ Result should be:
 ```
 
 
-Usage:
+## Usage:
 ```
 $ python3 -c 'import foo; print(foo.sumof3(2,40,30) )'
 72
