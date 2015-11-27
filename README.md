@@ -4,10 +4,10 @@ python modules with go
 Based on https://blog.filippo.io/building-python-modules-with-go-1-5/#thecompletedemosource
 
 ## Needed:
-golang (version 1.5 or higher)
-python3
-python3-dev
-pkg-config
+* golang (version 1.5 or higher)
+* python3
+* python3-dev
+* pkg-config
 Easy way to install most recen Go on Ubuntu:
 ```
 sudo add-apt-repository  ppa:ubuntu-lxc/lxd-stable
