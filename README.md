@@ -13,13 +13,7 @@ pkg-config
 ## Building:
 ```
 $ go build -buildmode=c-shared -o foo.so
-# _/home/sander/golang/mijn-module/example-final
-./foo.c:20:5: warning: initialization from incompatible pointer type [enabled by default]
-     {"sumof3", sumof3, METH_VARARGS, "Add three numbers."},
-     ^
-./foo.c:20:5: warning: (near initialization for ‘FooMethods[1].ml_meth’) [enabled by default]
 ```
-To do: get rid of that warning ...
 
 ## Resulting files:
 ```
@@ -28,7 +22,6 @@ To do: get rid of that warning ...
 -rw-r--r-- 1 sander sander 1588760 nov 26 08:06 foo.so
 -rw-rw-r-- 1 sander sander     902 nov 26 08:00 sum.go
 ```
-
 
 ## Usage:
 ```
