@@ -8,6 +8,11 @@ golang (version 1.5 or higher)
 python3
 python3-dev
 pkg-config
+Easy way to install most recen Go on Ubuntu:
+```
+sudo add-apt-repository  ppa:ubuntu-lxc/lxd-stable
+```
+... and then the ususal update/upgrade/install commands
 
 
 ## Building:
