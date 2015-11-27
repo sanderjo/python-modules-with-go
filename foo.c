@@ -3,7 +3,7 @@
 
 PyObject * sum(PyObject *, PyObject *);
 PyObject * minus(PyObject *, PyObject *);
-PyObject * sumof3(PyObject *, PyObject *, PyObject *);
+PyObject * sumof3(PyObject *, PyObject *);
 
 // Workaround missing variadic function support
 // https://github.com/golang/go/issues/975
@@ -11,7 +11,7 @@ int PyArg_ParseTuple_LL(PyObject * args, long long * a, long long * b) {
     return PyArg_ParseTuple(args, "LL", a, b);
 }
 
-int PyArg_ParseTuple_LL3(PyObject * args, long long * a, long long * b, long long * c) {  
+int PyArg_ParseTuple_LLL(PyObject * args, long long * a, long long * b, long long * c) {
     return PyArg_ParseTuple(args, "LLL", a, b, c);
 }
 
